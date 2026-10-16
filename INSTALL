@@ -1,0 +1,14 @@
+Bespin Qt widget style - Qt6 port
+
+Quick start (Qt6)
+=================
+Requirements: CMake >= 3.16, a C++17 compiler, Qt6 (Core, Gui, Widgets)
+
+    cmake -B build -DCMAKE_BUILD_TYPE=Release
+    cmake --build build
+    sudo cmake --install build          # installs libbespin.so into Qt6's plugins/styles
+    ./install_presets.sh presets         # optional: import the bundled presets
+
+Then run any Qt6 application with  -style bespin  (or QT_STYLE_OVERRIDE=bespin),
+or select "Bespin" in your desktop's application style settings.
+"bespin" (the config tool, from config/) configures the style.
